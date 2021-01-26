@@ -40,3 +40,18 @@
 ### tips
 
 - 输入的密钥只能包含字母和数字
+- 这里操作方式稍微与要求有点不同：
+
+`--key`与`-key`相同
+`-key` 输入密钥
+`-text` 在cmd中输入要加密的文本
+`-mode` 选择`encode`加密模式或者`decode`解密模式
+`-i` 选择输入文件，不能和`-text`同时使用
+`-o` 选择输出文件
+`-h`或`-help`查看帮助
+
+- 例子
+
+```
+vigenere-code -key keyword -text helloworld -mode encode
+```

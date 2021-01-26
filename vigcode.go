@@ -164,6 +164,7 @@ func help() {
 	fmt.Println("Tips:")
 	fmt.Println("Please do not include space or enter in xxx.")
 	fmt.Println("The file's default path is the progam's path.")
+	fmt.Println("The key can only include letter and number.")
 	fmt.Println("For example:")
 	fmt.Println("'vigenere-code -key keyword -text helloworld -mode encode'")
 	fmt.Println("This is an example which encode the 'hello world' with key 'keyword'")
