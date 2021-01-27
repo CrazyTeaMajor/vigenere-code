@@ -11,7 +11,6 @@ import (
 const (
 	numberSize int = 10
 	alphaSize  int = 26
-	Seed       int = 91
 )
 
 var alphaCodeList [alphaSize][alphaSize]int
@@ -203,11 +202,13 @@ func mainWork() {
 	} else {
 		textStr = cmdText
 	}
+
 	var outputText, temp string
 	for pos := range textStr {
 		temp = fmt.Sprintf("%c", codeText(textStr[pos], pos))
 		outputText += temp
 	}
+
 	if outputFilename != "" {
 		if isFileExist(outputFilename) {
 			var opt string
